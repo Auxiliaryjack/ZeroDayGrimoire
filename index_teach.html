@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coffee Shop</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <!-- CTRL + / to comment highlighted text -->
+    <!-- My website is going to be about a coffee shop -->
+    <header>
+      <h1>Coffee Shop</h1>
+      <a href="#footer">Scroll to bottom</a>
+      <nav>
+        <a href="#hot-drinks">To Hot Drinks</a>
+        <a href="#cold-drinks">To Cold Drinks</a>
+        <a href="./pages/about.html">About Page</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hot-drinks">
+        <h2>Hot Drinks</h2>
+        <p>Here are the hot drinks we offer:</p>
+        <ol>
+          <li>Americano</li>
+          <li>Cappucino</li>
+          <li>latte</li>
+        </ol>
+        <div>
+          <!-- recommend using ./ before writing a relative path-->
+          <!-- This is a relative path (The image is stored in my project folder and the path is relative to my index.html file) -->
+          <img
+            src="./images/americano.jpg"
+            alt="image of a hot americano"
+            width="300"
+            height="200"
+          />
+          <p>This image is from: pixabay</p>
+        </div>
+        <div>
+          <!-- This is an img with an absolute path (the full URL) -->
+          <img
+            src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="photo of a latte"
+            width="300"
+            height="200"
+          />
+          <p>
+            This image is from:
+            <a
+              href="https://unsplash.com/photos/person-making-latte-art-nzyzAUsbV0M"
+              >unsplash</a
+            >
+          </p>
+        </div>
+      </section>
+      <section id="cold-drinks">
+        <h2>Cold Drinks</h2>
+        <p>Here are the cold drinks we offer:</p>
+        <ul>
+          <li>Iced Americano</li>
+          <li>Iced Latte</li>
+          <li>Frappucino</li>
+        </ul>
+        <figure>
+          <img
+            src="./images/ice-americano.jpg"
+            alt="photo of an iced americano"
+            width="300"
+            height="200"
+          />
+          <figcaption>Image is sourced from: unsplash</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Nested List Section</h2>
+        <ul>
+          <li>
+            First Item
+            <ol>
+              <li>nested list item</li>
+              <li>nested list item</li>
+            </ol>
+          </li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+        </ul>
+      </section>
+      <section>
+        <a href="https://www.google.com" target="_blank">Link to Google</a>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>This website was created by Elle Swampy</p>
+    </footer>
+  </body>
+</html>
