@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color:blueviolet;
+  font-family: 
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Manufacturing Consent, Libertinus Math, Georgia, 'Times New Roman', Times, serif
+  
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color:white;
+}
+
+figcaption {
+  color: red;
+}
+
+a {
+  color: blue;
+}
+
+.libertinus-math-regular {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
