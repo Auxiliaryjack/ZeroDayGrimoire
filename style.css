@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color:blueviolet;
+  font-family: 
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Manufacturing Consent, Libertinus Math, Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  
+}
+
+nav {
+  text-align: right;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color:white;
+}
+
+figcaption {
+  color: red;
+  font-style: italic;
+}
+
+a {
+  color: blue;
+}
+
+.libertinus-math-regular {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* i made these lines too far apart */
+div.a {
+  line-height: 7.6;
+}
+/* i made these lines too close together */
+div.b {
+  line-height: 70%;
+}
+/* i think this counts as nested selector, because the paragraphs inside the sections arent effected by the font size and the fig captions are. */
+section figure figcaption {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* i wanted to strike a line through the link to picture text on hover but when i added the a after figcaption it didnt change the strike through to the link text, it says on the figcaption, could you let me know what im doing wrong? */
+section figure figcaption:hover {
+  text-decoration: line-through;
+}
+
+/* i want to clarify that i understand the placement of this h1 hover would most likely go under the original h1 styles i have on lines 7 through 14 */
+
+h1:hover {
+text-decoration:line-through;
+color:red}
+
+
+/* i really like the pseudo-class selectors */
