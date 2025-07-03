@@ -18,7 +18,7 @@
     </header>
     <main>
       <section>
-        <h2>The stairs led somewhere they shouldn't.</h2>
+        <h2>The stairs led somewhere they <strong> shouldn't.</strong></h2>
           <hr>
             <table>
               <th>
@@ -27,10 +27,11 @@
         <p>I reached the door marked <strong>203</strong>. The number was written in fingernail scratches. The wood was damp, as if something on the other side was <em>breathing on it</em>.</p>
               </th>
             </table>
+            <div class="hover-target3" id="hoverArea3">
         <img class="room203" src="../Images/francesco-ungaro-HCWG4q1Ig_o-unsplash.jpg" 
         alt="the door" 
-        width="70%"
-        >
+        width="100%">
+        </div>
         <figcaption>Image Source: Unsplash</figcaption>
         <hr>
       </section>
@@ -53,5 +54,22 @@
     <footer>
       <p>This site was created by Jared Steinke</p>
     </footer>
+     <audio id="hoverSound3" src="../Sounds/squeaky-door-open-317165.mp3" preload="auto"></audio>
+    <script>
+  const hoverArea3 = document.getElementById('hoverArea3');
+  const sound3 = document.getElementById('hoverSound3');
+  let timer3;
+  
+  hoverArea3.addEventListener('mouseenter', () => {
+    timer3 = setTimeout(() => {
+      sound3.currentTime = 0;
+      sound3.play();
+    }, 3000); // 3 second delay
+  });
+
+  hoverArea3.addEventListener('mouseleave', () => {
+    clearTimeout(timer2);
+  });
+</script>
   </body>
 </html>

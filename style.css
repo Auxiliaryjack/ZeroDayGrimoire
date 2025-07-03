@@ -1,6 +1,13 @@
+/*div as a container has a couple examples on 85 and 89
+ My max width property is on line 44
+i auto a couple of things, its a great little tool to help center
+and all my background stuff is in the body here */
+
 body {
   background-color: rgb(0, 0, 0);
+  background-image: url("./Images/paul-volkmer-qVotvbsuM_c-unsplash.jpg");
   color:blueviolet;
+  background-position: 100%;
   font-family: 
 }
 
@@ -34,23 +41,26 @@ p {
   color:white;
   font-size: 130%;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: auto;
   text-indent:3em;
   text-align: center;
   letter-spacing: 100%;
   line-height: 110%;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
 }
 
 table, th, td, tr{
   display: block;
   border-collapse: collapse;
-  width: 100%;
   border:2px solid rgb(255, 255, 255);
   box-sizing: border-box;
   padding: 2px;
-  margin: 2px;
+  margin: 0 auto;
+  width: 95%%;
 }
-/* these are the best examples of padding, border and margins i probably have in my text */
-/* my imgaes have thier width and height set in percents on the index page, i found the percentages are more consistant for using a webpage in different browsers and on different devices */
+
 figcaption {
   color: red;
   font-style: italic;
@@ -90,9 +100,6 @@ section figure figcaption {
 section figure figcaption:hover {
   text-decoration: line-through;
 }
-
-/* i had i little help with my class selectors, i had AI generate a couple examples i could use to accomplish some stuff i wanted my webpage to have. i know you said not to, but i find i learn better when i can deconstruct something complete instead of learning how to piece everything together in real time. as long as i understand why things work and can reconstruct everything based on how i learned it when i took it apart, there shouldn't be an issue right? */
-
 .flicker {
   animation: flicker 2s infinite;
 }
@@ -106,18 +113,41 @@ section figure figcaption:hover {
       }
     }
 
-        .hover-target {
-      display: inline-block;
-      padding: 20px;
-      background-color: #444;
-      color: white;
-      border-radius: 8px;
+        .hover-target1 {
+      display: block;
+      padding: 5px;
+      background-color: #666;
       cursor: pointer;
       font-family: sans-serif;
       transition: background 0.3s;
     }
 
-    .hover-target:hover {
+    .hover-target1:hover {
+      background-color: #666;
+    }
+
+      .hover-target2 {
+      display: block;
+      padding: 5px;
+      background-color: #666;
+      cursor: pointer;
+      font-family: sans-serif;
+      transition: background 0.3s;
+    }
+
+    .hover-target2:hover {
+      background-color: #666;
+    }
+      .hover-target3 {
+      display: block;
+      padding: 5px;
+      background-color: #666;
+      cursor: pointer;
+      font-family: sans-serif;
+      transition: background 0.3s;
+    }
+
+    .hover-target3:hover {
       background-color: #666;
     }
 
@@ -159,23 +189,31 @@ section figure figcaption:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: #666;
+  padding: 5px;
 
 }
 .creepy_forest_path{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: #666;
+  padding: 5px;
 
 }
 .deadhouse{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: #666;
+  padding: 5px;
 
 }
 .room203{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: #666;
+  padding: 5px;
 
 }
