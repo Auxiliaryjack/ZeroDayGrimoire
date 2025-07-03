@@ -7,10 +7,17 @@ body {
 h1 {
   color: rgb(255, 255, 255);
   font-family: Manufacturing Consent, Libertinus Math, Georgia, 'Times New Roman', Times, serif;
-  font-size: 50px;
+  font-size: 800%;
   font-weight: 800;
   text-align: center;
-  
+}
+
+h1:hover {
+text-decoration:line-through;
+color:red}
+
+strong{
+  color: red
 }
 
 nav {
@@ -19,12 +26,31 @@ nav {
 
 h2 {
   color: #ffffff;
+  text-align: center;
+  font-size: 350%;
 }
 
 p {
   color:white;
+  font-size: 130%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent:3em;
+  text-align: center;
+  letter-spacing: 100%;
+  line-height: 110%;
 }
 
+table, th, td, tr{
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  border:2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 2px;
+}
+/* these are the best examples of padding, border and margins i probably have in my text */
+/* my imgaes have thier width and height set in percents on the index page, i found the percentages are more consistant for using a webpage in different browsers and on different devices */
 figcaption {
   color: red;
   font-style: italic;
@@ -36,40 +62,120 @@ a {
 
 .libertinus-math-regular {
   font-family: "Libertinus Math", system-ui;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
 }
 
 .manufacturing-consent-regular {
   font-family: "Manufacturing Consent", system-ui;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
 }
-/* i made these lines too far apart */
+
 div.a {
-  line-height: 7.6;
+  line-height: 100%;
 }
-/* i made these lines too close together */
+
 div.b {
-  line-height: 70%;
+  line-height: 100%;
 }
-/* i think this counts as nested selector, because the paragraphs inside the sections arent effected by the font size and the fig captions are. */
+
+
 section figure figcaption {
-  font-size: 50px;
+  font-size: 10px;
   font-style: italic;
   font-weight: bolder;
 }
 
-/* i wanted to strike a line through the link to picture text on hover but when i added the a after figcaption it didnt change the strike through to the link text, it says on the figcaption, could you let me know what im doing wrong? */
 section figure figcaption:hover {
   text-decoration: line-through;
 }
 
-/* i want to clarify that i understand the placement of this h1 hover would most likely go under the original h1 styles i have on lines 7 through 14 */
+/* i had i little help with my class selectors, i had AI generate a couple examples i could use to accomplish some stuff i wanted my webpage to have. i know you said not to, but i find i learn better when i can deconstruct something complete instead of learning how to piece everything together in real time. as long as i understand why things work and can reconstruct everything based on how i learned it when i took it apart, there shouldn't be an issue right? */
 
-h1:hover {
-text-decoration:line-through;
-color:red}
+.flicker {
+  animation: flicker 2s infinite;
+}
 
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      19%, 21%, 24%, 56% {
+        opacity: 0.6;
+      }
+    }
 
-/* i really like the pseudo-class selectors */
+        .hover-target {
+      display: inline-block;
+      padding: 20px;
+      background-color: #444;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: sans-serif;
+      transition: background 0.3s;
+    }
+
+    .hover-target:hover {
+      background-color: #666;
+    }
+
+    .bloody {
+  color: darkred;
+  text-shadow: 0 0 5px red;
+  animation: drip 3s infinite;
+}
+
+@keyframes drip {
+  0% { text-shadow: 0 0 5px red; }
+  50% { text-shadow: 0 5px 15px crimson; }
+  100% { text-shadow: 0 0 5px red; }
+}
+
+.hidden-message {
+  color: transparent;
+  transition: color 2s ease-in;
+}
+
+.hidden-message:hover {
+  color: crimson;
+}
+
+.glitchy-text {
+  color: red;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { opacity: 1; }
+  25% { opacity: 0.7; transform: translateX(-1px); }
+  50% { opacity: 0.3; transform: translateX(2px); }
+  75% { opacity: 0.9; transform: translateX(-2px); }
+  100% { opacity: 1; }
+}
+
+.monty_lane{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.creepy_forest_path{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.deadhouse{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.room203{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
